@@ -11,8 +11,8 @@ https://developer.twitter.com/en/docs/tweets/search/overview/standard.html
 
 ## Facebook
 ### Main Pages
+>We are focused on the Graph API and Instagram API.
 https://developers.facebook.com/products/
-We are focused on the Graph API and Instagram API.
 https://developers.facebook.com/docs/graph-api
 https://developers.facebook.com/docs/instagram-api
 
