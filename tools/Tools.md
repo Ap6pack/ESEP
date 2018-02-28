@@ -27,3 +27,9 @@
 
 ## [Streisand Effect](https://github.com/StreisandEffect/streisand)
 > About:
+
+## [Generate Macro](https://github.com/enigma0x3/Generate-Macro)
+> About
+
+## [Lucky Strike](https://github.com/curi0usJack/luckystrike)
+> About
