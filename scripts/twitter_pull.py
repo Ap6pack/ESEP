@@ -33,9 +33,9 @@ if tweet_list is not None:
     # loop over each Tweet and print the date and text
     for tweet in tweet_list:
 
-        print ('%s : %s' % (tweet['created_at'], tweet['text']))
+        print '%s : %s' % (tweet['created_at'], tweet['text'])
 
 else:
 
-    print ('[*] No Tweets retrieved.')
+    print '[*] No Tweets retrieved.'
     
