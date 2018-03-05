@@ -125,10 +125,12 @@ def simple_main(screen_name, count):
         for tweet in tweet_list:
 
             pprint.pprint('%s : %s' % (tweet['created_at'], tweet['text']))
+            start_over()
 
     else:
 
         print '[*] No Tweets retrieved.'
+        start_over()
 
 
 def verbose_main(screen_name, count):
@@ -141,13 +143,21 @@ def verbose_main(screen_name, count):
         for tweet in tweet_list:
 
             pprint.pprint('%s : %s' % (tweet['created_at'], tweet['text']))
-
+            start_over()
     else:
 
         print '[*] No Tweets retrieved.'
+        start_over()
 
 def coming_soon():
     print "This functionality is coming soon"
     exit()
+
+def star_over():
+    start_over = raw_input("Start Over?\t(y/n)")
+    if start_over.lower() == str('y') or start_over.lower() == str('yes'):
+        intro()
+    else:
+        exit()
 
 intro()
