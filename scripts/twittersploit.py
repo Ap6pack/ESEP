@@ -3,8 +3,9 @@
 
 import json
 import sys
+import pprint
 import requests
-from twitter_keys import oauth, url
+from keys import oauth, url
 
 
 
@@ -75,11 +76,32 @@ def menu2():
     ch1 = raw_input("Do you wish to define how many tweets to query? (y/n)\t")
     if ch1.lower() == str('y') or ch1.lower() == str('yes'):
         count = int(raw_input("How many tweets to you want to evaluate? (Maximum: 3200)\t"))
-        main(screen_name, count)
+        menu3(screen_name, count)
     else:
         coming_soon()
 
-def download_tweets(screen_name, count):
+def menu3(screen_name, count):
+    verbosity = raw_input("Do you desire expanded verbosity\t\t")
+    verbosity = str(verbosity.lower())
+    if verbosity.lower() == str('y') or verbosity.lower() == str('yes'):
+        verbose_main(screen_name, count)
+    else:
+        simple_main(screen_name, count)
+
+def verbose_download_tweets(screen_name, count):
+    api_url = '%s/statuses/user_timeline.json' % url
+    params = {
+        'screen_name':  screen_name,
+        'count':        count,
+    }
+    # send request to Twitter
+    response = requests.get(api_url, params=params, auth=oauth)
+    if response.status_code == 200:
+        tweets = pprint.pprint(json.loads(response.content))
+        return tweets
+    return None
+
+def simple_download_tweets(screen_name, count):
     api_url = '%s/statuses/user_timeline.json' % url
     params = {
         'screen_name':  screen_name,
@@ -91,18 +113,33 @@ def download_tweets(screen_name, count):
         tweets = json.loads(response.content)
         return tweets
     return None
-    
 
-def main(screen_name, count):
+def simple_main(screen_name, count):
     # get a list of Tweets
-    tweet_list = download_tweets(screen_name, count)
+    tweet_list = simple_download_tweets(screen_name, count)
 
     if tweet_list is not None:
 
         # loop over each Tweet and print the date and text
         for tweet in tweet_list:
 
-            print '%s : %s' % (tweet['created_at'], tweet['text'])
+            pprint.pprint('%s : %s' % (tweet['created_at'], tweet['text']))
+
+    else:
+
+        print '[*] No Tweets retrieved.'
+
+
+def verbose_main(screen_name, count):
+    # get a list of Tweets
+    tweet_list = verbose_download_tweets(screen_name, count)
+
+    if tweet_list is not None:
+
+        # loop over each Tweet and print the date and text
+        for tweet in tweet_list:
+
+            pprint.pprint('%s : %s' % (tweet['created_at'], tweet['text']))
 
     else:
 
