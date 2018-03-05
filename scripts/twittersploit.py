@@ -78,7 +78,8 @@ def menu2():
         count = int(raw_input("How many tweets to you want to evaluate? (Maximum: 3200)\t"))
         menu3(screen_name, count)
     else:
-        coming_soon()
+        print "Using the default value of 10"
+        menu3(screen_name, 10)
 
 def menu3(screen_name, count):
     verbosity = raw_input("Do you desire expanded verbosity\t\t")
