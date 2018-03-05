@@ -1,6 +1,6 @@
 ''' This is a script to apply a regular expression
 to parse the information from twitter_pull.py'''
-import re2 as re
+import re
 
 filename = open("C_3PJoe.txt", "r")
 array = []
