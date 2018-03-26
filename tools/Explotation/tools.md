@@ -12,3 +12,15 @@
 
 ## [Powershell](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)
 > About: Open source scripting language developed by Microsoft and native to the Windows environment.
+
+## [BeEF - Browser Exploitation Framework](http://beefproject.com/)
+> 
+
+## [Trusted Attack Platform (TAP)](https://github.com/trustedsec/tap)
+> 
+
+## []()
+> 
+
+## []()
+> 
