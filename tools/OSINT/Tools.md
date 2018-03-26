@@ -10,9 +10,6 @@
 ## [The Harvester](https://github.com/laramies/theHarvester)
 > About: E-mails, subdomains and names Harvester - OSINT http://www.edge-security.com/
 
-## [Social Engineer Toolkit](https://github.com/trustedsec/social-engineer-toolkit)
-> About: The Social-Engineer Toolkit is an open-source penetration testing framework designed for social engineering. SET has a number of custom attack vectors that allow you to make a believable attack quickly. SET is a product of TrustedSec, LLC.
-
 ## [AltDNS](https://github.com/upgoingstar/altdns)
 > About: Generates permutations, alterations and mutations of subdomains and then resolves them.
 
@@ -25,21 +22,8 @@
 ## [What's My Name](https://github.com/WebBreacher/WhatsMyName)
 > About: Unified data required to perform user enumeration on various websites
 
-## [Streisand Effect](https://github.com/StreisandEffect/streisand)
-> About: Streisand sets up a new server running your choice of L2TP/IPsec, OpenConnect, OpenSSH, OpenVPN, Shadowsocks, sslh, Stunnel, a Tor bridge, and WireGuard.
-
-## [Generate Macro](https://github.com/enigma0x3/Generate-Macro)
-> About: Generate-Macro is a standalone PowerShell script that will generate a malicious Microsoft Office document with a specified payload and persistence method.
-
-## [Lucky Strike](https://github.com/curi0usJack/luckystrike)
-> About: A PowerShell based utility for the creation of malicious Office macro documents.
-
-## [Powershell](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)
-> About: Open source scripting language developed by Microsoft and native to the Windows environment.
-
 ## [Spaces Finder](https://github.com/upgoingstar/spaces-finder)
 > About: A tool to hunt for publicly accessible DigitalOcean Spaces
 
 ## [Auth-Check](https://github.com/upgoingstar/Auth-Check)
 > About: Checks from a list of URLs, if they are accessible without login or not. Also checks for a specific string (regex) in response and tells if pattern matched or not.
-
