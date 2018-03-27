@@ -26,3 +26,7 @@
 
 ## [GoPhish](https://getgophish.com/)
 > Gophish is an open-source phishing toolkit designed for businesses and penetration testers. It provides the ability to quickly and easily setup and execute phishing engagements and security awareness training.
+
+## [Simply Templates](https://github.com/SimplySecurity/SimplyTemplate)
+> Phishing Email Templates.
+> Written by [CyberSyndacites](https://cybersyndicates.com/)
