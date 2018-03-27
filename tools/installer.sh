@@ -51,3 +51,7 @@ git clone https://github.com/SimplySecurity/SimplyEmail;
 # Begin Dependencies and Installation
 echo "Installing Powershell"
 dpkg -i powershell_6.1.0-preview.1-1.debian.8_amd64.deb;
+echo "Installing GoPhish"
+unzip /opt/gophish-v0.5.0-linux-64bit.zip -d /opt/gophish
+echo "Installing Phishery"
+tar -xvf phishery1.0.2linux-amd64.tar.gz --directory /opt/phishery
