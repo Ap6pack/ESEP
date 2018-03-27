@@ -1,5 +1,6 @@
 echo "Installing dependencies"
-sudo apt-get install git wget curl -y
+sudo apt-get install git wget curl python-pip python3-pip -y
+cd /opt
 
 # Get all the packages
 echo "Downloading the packages"
@@ -52,6 +53,51 @@ git clone https://github.com/SimplySecurity/SimplyEmail;
 echo "Installing Powershell"
 dpkg -i powershell_6.1.0-preview.1-1.debian.8_amd64.deb;
 echo "Installing GoPhish"
-unzip /opt/gophish-v0.5.0-linux-64bit.zip -d /opt/gophish
+unzip /opt/gophish-v0.5.0-linux-64bit.zip -d /opt/gophish;
 echo "Installing Phishery"
-tar -xvf phishery1.0.2linux-amd64.tar.gz --directory /opt/phishery
+tar -xvf phishery1.0.2linux-amd64.tar.gz --directory /opt/phishery;
+cd /opt/phishery;
+cp phishery /usr/local/bin;
+cd /opt;
+echo "Installing Empire"
+cd /opt/Empire/setup/;
+pip install -r requirements.txt;
+cd ..;
+./setup/install.sh;
+echo "Installing King Phisher"
+cd /opt/king-phisher;
+pip install -r requirements.txt;
+./tools/install.sh;
+cd ..;
+echo "Installing SPF"
+cd /opt/SPF;
+pip install -r Requirements.txt;
+./install.sh;
+cd ..;
+echo "Installing Spiderfoot"
+cd /opt/spiderfoot;
+pip install -r requirements.txt;
+python setup.py;
+cd..;
+echo "Installing Datasploit"
+cd /opt/datasploit;
+pip install -r requirements.txt;
+cd ..;
+echo "Installing AltDNS"
+cd /opt/altdns;
+pip install -r requirements.txt;
+cd ..;
+echo "Installing WhatsMyName"
+cd /opt/WhatsMyName;
+pip install -r requirements.txt;
+cd ..;
+echo "Installing "Spaces Finder"
+cd /opt/spaces-finder;
+pip install -r requirements.txt;
+cd ..;
+echo "Installing SimplyEmail"
+cd /opt/SimplyEmail/setup;
+pip install -r requirements.txt;
+cd ..;
+/opt/SimplyEmail/setup/setup.sh;
+cd /opt;
