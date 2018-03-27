@@ -50,7 +50,6 @@ echo "Gathering SimplyEmail"
 git clone https://github.com/SimplySecurity/SimplyEmail;
 echo "Gathering Veil"
 git clone https://github.com/Veil-Framework/Veil;
-
 # Begin Dependencies and Installation
 echo "Installing Powershell"
 dpkg -i powershell_6.1.0-preview.1-1.debian.8_amd64.deb;
