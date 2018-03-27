@@ -48,6 +48,8 @@ echo "Gathering AuthCheck"
 git clone https://github.com/upgoingstar/Auth-Check;
 echo "Gathering SimplyEmail"
 git clone https://github.com/SimplySecurity/SimplyEmail;
+echo "Gathering Veil"
+git clone https://github.com/Veil-Framework/Veil;
 
 # Begin Dependencies and Installation
 echo "Installing Powershell"
@@ -100,4 +102,8 @@ cd /opt/SimplyEmail/setup;
 pip install -r requirements.txt;
 cd ..;
 /opt/SimplyEmail/setup/setup.sh;
+echo "Installing Veil"
+cd /opt/Veil/
+cd setup
+sudo ./setup.sh -c
 cd /opt;
