@@ -1,7 +1,7 @@
 # ESEP
 EC-Council Social Engineering
 
-## Instructions
+## Pre-Class Instructions
 ### Operating System
 You may use Kali, Buscador, or a custom Linux (preferably Ubuntu) operating system. You may also use a Digital Ocean droplet (coupon: https://m.do.co/c/ab5f75969c8a) to do the labs using a cloud instance.
 
@@ -21,3 +21,6 @@ To add an API Key of a1b2c3 to API EC_Council, we would enter:
 #### Datasploit
 For Datasploit, follow the installation instructions provided in the Github and enter the keys into ```config_sample.py``` then execute the following command:
 ```cp config_sample.py config.py```
+
+This is everything for now, I look forward to seeing you and working through some Social Engineering and OSINT soon.
+-Joe Gray (Twitter: @C_3PJoe, email: jgray[at]advancedpersistentsecurity[dot]net)
